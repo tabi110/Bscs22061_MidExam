@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Profile with skills, projects, and achievements">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Profile, Soft Skills, Hard Skills">
+    <title>Professional Profile</title>
+    <link rel="stylesheet" href="MyStylesheet.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="MissionImpossible.html">Mission Impossible</a></li>
+                <li><a href="Spiderman.html">SpiderMan No Way Home</a></li>
+                <li><a href="Avengers.html">Avengers Endgame</a></li>
+                <li><a href="InsideOut.html">Inside Out</a></li>
+                <li><a href="TGM.html">The Garfield Movie</a></li>
+                <li><a href="Favourites.html">Favourites</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div id="intro" class="section">
+            <h1 id="profile-title">SpiderMan No Way Home</h1>
+            <h2> Title: SpiderMan No Way Home <br> Release Date: 21st December, 2021 <br> Rating: <br> IMBD: 4.9/5 <br>RottenTomatoes: 4.9/5<br></h2>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Connect with me:</p>
+        <a id="instagram-link" href="#">Instagram</a>
+        <a id="linkedin-link" href="#">LinkedIn</a>
+    </div>
+
+    <script src="index.js"></script>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script> 
+</body>
+</html>
